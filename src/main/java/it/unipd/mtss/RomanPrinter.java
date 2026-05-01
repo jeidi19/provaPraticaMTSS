@@ -11,30 +11,13 @@ public class RomanPrinter {
 
     private static String printAsciiArt(String romanNumber) {
         String[] letterI = {
-                "  _____  ",
-                " |_   _| ",
-                "   | |   ",
-                "   | |   ",
-                "  _| |_  ",
-                " |_____| "
+            "  _____  ", " |_   _| ", "   | |   ", "   | |   ", "  _| |_  ", " |_____| "
         };
-
         String[] letterV = {
-                " __      __ ",
-                " \\\\ \\    / / ",
-                "  \\\\ \\  / /  ",
-                "   \\\\ \\/ /   ",
-                "    \\\\  /    ",
-                "     \\\\/     "
+            " __      __ ", " \\\\ \\    / / ", "  \\ \\  / /  ", "   \\ \\/ /   ", "    \\  /    ", "     \\/     "
         };
-
         String[] letterX = {
-            " __   __", 
-            " \\ \\ / /", 
-            "  \\ V /", 
-            "   > <   ", 
-            "  / . \\  ", 
-            " /_/ \\_\\"
+            " __    __ ", " \\\\ \\  / / ", "  \\\\ \\/ /  ", "   >  <   ", "  / /\\ \\  ", " /_/  \\_\\ "
         };
         StringBuilder result = new StringBuilder();
         int height = 6;

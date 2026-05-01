@@ -100,7 +100,6 @@
           <artifactId>coveralls-maven-plugin</artifactId>
           <version>5.0.0</version>
           <configuration>
-            <repoToken>H2zMRVLamMNUXyVeBkYeMjGslN38AytWv</repoToken>
           </configuration>
         </plugin>
       </plugins>

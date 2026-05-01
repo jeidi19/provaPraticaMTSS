@@ -27,6 +27,15 @@ public class RomanPrinter {
                 "    \\\\  /    ",
                 "     \\\\/     "
         };
+
+        String[] letterX = {
+            " __   __", 
+            " \\ \\ / /", 
+            "  \\ V /", 
+            "   > <   ", 
+            "  / . \\  ", 
+            " /_/ \\_\\"
+        };
         StringBuilder result = new StringBuilder();
         int height = 6;
 
@@ -37,6 +46,9 @@ public class RomanPrinter {
                 }
                 else if (c == 'V') {
                     result.append(letterV[i]);
+                }
+                else if (c == 'X') {
+                    result.append(letterX[i]);
                 }
             }
             result.append("\n");

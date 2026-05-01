@@ -12,10 +12,19 @@ public class IntegerToRoman {
 
         StringBuilder roman = new StringBuilder();
 
-        if (number >= 5) {
+        if (number >= 10) {
+            roman.append("X");
+            number -= 10;
+        } 
+        else if (number == 9) {
+            roman.append("IX");
+            number -= 9;
+        }
+        else if (number >= 5) {
             roman.append("V");
             number -= 5;
-        } else if (number == 4) {
+        } 
+        else if (number == 4) {
             roman.append("IV");
             number -= 4;
         }

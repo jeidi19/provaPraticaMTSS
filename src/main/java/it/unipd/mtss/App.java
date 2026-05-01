@@ -1,0 +1,13 @@
+////////////////////////////////////////////////////////////////////
+// Antonio Tufano 2137972 
+// Jacopo De Donà 2104894 
+////////////////////////////////////////////////////////////////////
+
+package it.unipd.mtss;
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+    }
+}

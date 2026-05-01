@@ -12,6 +12,14 @@ public class IntegerToRoman {
 
         StringBuilder roman = new StringBuilder();
 
+        while (number >= 50) {
+            roman.append("L");
+            number -= 50;
+        }
+        if (number >= 40) {
+            roman.append("XL");
+            number -= 40;
+        }
         while (number >= 10) {
             roman.append("X");
             number -= 10;

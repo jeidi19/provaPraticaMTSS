@@ -11,6 +11,15 @@ public class IntegerToRoman {
         }
 
         StringBuilder roman = new StringBuilder();
+
+        if (number >= 5) {
+            roman.append("V");
+            number -= 5;
+        } else if (number == 4) {
+            roman.append("IV");
+            number -= 4;
+        }
+        
         while (number >= 1) {
             roman.append("I");
             number -= 1;

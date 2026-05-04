@@ -28,6 +28,7 @@ public class RomanPrinter {
         String[] letterD = {
             "  _____   ", " |  __ \\\\  ", " | |  | | ", " | |  | | ", " | |__| | ", " |_____/  "
         };
+        String[] letterM = { "  __  __  ", " |  \\/  | ", " | \\  / | ", " | |\\/| | ", " | |  | | ", " |_|  |_| " };
 
         StringBuilder result = new StringBuilder();
         int height = 6;
@@ -51,6 +52,9 @@ public class RomanPrinter {
                 }
                 else if (c == 'D') { 
                     result.append(letterD[i]); 
+                }
+                else if (c == 'M') { 
+                    result.append(letterM[i]); 
                 }
             }
             result.append("\n");

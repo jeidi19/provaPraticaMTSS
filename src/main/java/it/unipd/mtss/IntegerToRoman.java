@@ -11,6 +11,15 @@ public class IntegerToRoman {
         }
 
         StringBuilder roman = new StringBuilder();
+
+        while (number >= 1000) {
+            roman.append("M");
+            number -= 1000;
+        }
+        if (number >= 900) {
+            roman.append("CM");
+            number -= 900;
+        }
         
         while (number >= 500) {
             roman.append("D");

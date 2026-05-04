@@ -74,6 +74,24 @@ public class RomanPrinter {
                 if (c == 'I') {
                     result.append(letterI[i]);
                 }
+                else if (c == 'V') {
+                    result.append(letterV[i]);
+                }
+                else if (c == 'X') {
+                    result.append(letterX[i]);
+                }
+                else if (c == 'L') { 
+                    result.append(letterL[i]); 
+                }
+                else if (c == 'C') { 
+                    result.append(letterC[i]); 
+                }
+                else if (c == 'D') { 
+                    result.append(letterD[i]); 
+                }
+                else if (c == 'M') { 
+                    result.append(letterM[i]); 
+                }
             }
             result.append("\n");
         }

@@ -25,6 +25,9 @@ public class RomanPrinter {
         String[] letterC = {
             "  _____  ", " / ____| ", "| |      ", "| |      ", "| |____  ", " \\_____| "
         };
+        String[] letterD = {
+            "  _____   ", " |  __ \\\\  ", " | |  | | ", " | |  | | ", " | |__| | ", " |_____/  "
+        };
 
         StringBuilder result = new StringBuilder();
         int height = 6;
@@ -45,6 +48,9 @@ public class RomanPrinter {
                 }
                 else if (c == 'C') { 
                     result.append(letterC[i]); 
+                }
+                else if (c == 'D') { 
+                    result.append(letterD[i]); 
                 }
             }
             result.append("\n");

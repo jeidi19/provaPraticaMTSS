@@ -12,6 +12,15 @@ public class IntegerToRoman {
 
         StringBuilder roman = new StringBuilder();
         
+        while (number >= 500) {
+            roman.append("D");
+            number -= 500;
+        }
+        if (number >= 400) {
+            roman.append("CD");
+            number -= 400;
+        }
+        
         while (number >= 100) {
             roman.append("C");
             number -= 100;

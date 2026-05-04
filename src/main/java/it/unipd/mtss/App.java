@@ -8,6 +8,8 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println(RomanPrinter.print(99));
+        System.out.println(RomanPrinter.print(350));
+        System.out.println(RomanPrinter.print(499));
+        System.out.println(RomanPrinter.print(500));
     }
 }

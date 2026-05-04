@@ -9,88 +9,89 @@ public class RomanPrinter {
         return printAsciiArt(IntegerToRoman.convert(num));
     }
 
+    private static final String[] LETTER_I = {
+        "  _____   ", 
+        " |_   _|  ", 
+        "   | |    ", 
+        "   | |    ", 
+        "  _| |_   ", 
+        " |_____|  "
+    };
+    private static final String[] LETTER_V = {
+        " __      __ ", 
+        " \\ \\    / / ", 
+        "  \\ \\  / /  ", 
+        "   \\ \\/ /   ", 
+        "    \\  /    ", 
+        "     \\/     "
+    };
+    private static final String[] LETTER_X = {
+        " __    __ ", 
+        " \\ \\  / / ", 
+        "  \\ \\/ /  ", 
+        "   >  <   ", 
+        "  / /\\ \\  ", 
+        " /_/  \\_\\ "
+    };
+    private static final String[] LETTER_L = {
+        "  _       ", 
+        " | |      ", 
+        " | |      ", 
+        " | |      ", 
+        " | |____  ", 
+        " |______| "
+    };
+    private static final String[] LETTER_C = {
+        "  _____   ", 
+        " / ____|  ", 
+        "| |       ", 
+        "| |       ", 
+        "| |____   ", 
+        " \\_____|  "
+    };
+    private static final String[] LETTER_D = {
+        "  _____    ", 
+        " |  __ \\   ", 
+        " | |  | |  ", 
+        " | |  | |  ", 
+        " | |__| |  ", 
+        " |_____/   "
+    };
+    private static final String[] LETTER_M = {
+        "  __  __  ", 
+        " |  \\/  | ", 
+        " | \\  / | ", 
+        " | |\\/| | ", 
+        " | |  | | ", 
+        " |_|  |_| "
+    };
+
     private static String printAsciiArt(String romanNumber) {
-        String[] letterI = {
-            "  _____   ", 
-            " |_   _|  ", 
-            "   | |    ", 
-            "   | |    ", 
-            "  _| |_   ", 
-            " |_____|  "
-        };
-        String[] letterV = {
-            " __      __ ", 
-            " \\ \\    / / ", 
-            "  \\ \\  / /  ", 
-            "   \\ \\/ /   ", 
-            "    \\  /    ", 
-            "     \\/     "
-        };
-        String[] letterX = {
-            " __    __ ", 
-            " \\ \\  / / ", 
-            "  \\ \\/ /  ", 
-            "   >  <   ", 
-            "  / /\\ \\  ", 
-            " /_/  \\_\\ "
-        };
-        String[] letterL = {
-            "  _       ", 
-            " | |      ", 
-            " | |      ", 
-            " | |      ", 
-            " | |____  ", 
-            " |______| "
-        };
-        String[] letterC = {
-            "  _____   ", 
-            " / ____|  ", 
-            "| |       ", 
-            "| |       ", 
-            "| |____   ", 
-            " \\_____|  "
-        };
-        String[] letterD = {
-            "  _____    ", 
-            " |  __ \\   ", 
-            " | |  | |  ", 
-            " | |  | |  ", 
-            " | |__| |  ", 
-            " |_____/   "
-        };
-        String[] letterM = {
-            "  __  __  ", 
-            " |  \\/  | ", 
-            " | \\  / | ", 
-            " | |\\/| | ", 
-            " | |  | | ", 
-            " |_|  |_| "
-        };
         StringBuilder result = new StringBuilder();
         int height = 6;
 
         for (int i = 0; i < height; i++) {
             for (char c : romanNumber.toCharArray()) {
                 if (c == 'I') {
-                    result.append(letterI[i]);
+                    result.append(LETTER_I[i]);
                 }
                 else if (c == 'V') {
-                    result.append(letterV[i]);
+                    result.append(LETTER_V[i]);
                 }
                 else if (c == 'X') {
-                    result.append(letterX[i]);
+                    result.append(LETTER_X[i]);
                 }
                 else if (c == 'L') { 
-                    result.append(letterL[i]); 
+                    result.append(LETTER_L[i]); 
                 }
                 else if (c == 'C') { 
-                    result.append(letterC[i]); 
+                    result.append(LETTER_C[i]); 
                 }
                 else if (c == 'D') { 
-                    result.append(letterD[i]); 
+                    result.append(LETTER_D[i]); 
                 }
                 else if (c == 'M') { 
-                    result.append(letterM[i]); 
+                    result.append(LETTER_M[i]); 
                 }
             }
             result.append("\n");

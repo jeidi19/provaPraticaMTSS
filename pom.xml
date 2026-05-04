@@ -144,5 +144,19 @@
         </plugin>
       </plugins>
     </pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>com.github.hazendaz.maven</groupId>
+        <artifactId>coveralls-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
   </build>
 </project>

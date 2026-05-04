@@ -100,12 +100,20 @@
           <artifactId>coveralls-maven-plugin</artifactId>
           <version>5.0.0</version>
           <configuration>
+            <sourceDirectories>
+              <sourceDirectory>src/main/java</sourceDirectory>
+            </sourceDirectories>
           </configuration>
         </plugin>
         <plugin>
           <groupId>org.jacoco</groupId>
           <artifactId>jacoco-maven-plugin</artifactId>
           <version>0.8.14</version>
+          <configuration>
+            <excludes>
+              <exclude>it/unipd/mtss/App.class</exclude>
+            </excludes>
+          </configuration>
           <executions> 
             <execution>
               <id>prepare-agent</id>

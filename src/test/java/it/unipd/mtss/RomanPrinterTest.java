@@ -21,13 +21,12 @@ public class RomanPrinterTest {
     public void testPrint_CorrectHeight() {
         int number = 10;
         String result = RomanPrinter.print(number);
-        // Verifichiamo che ci siano 6 righe (5 \n + 1 finale o simile)
         String[] lines = result.split("\n");
         assertEquals(6, lines.length);
     }
 
     @Test
-    public void testPrint_ContainsI() {
+    public void testPrint_ContainsExpectedCharacters() {
         int number = 1;
         String result = RomanPrinter.print(number);
         assertTrue(result.contains("|"));
@@ -35,11 +34,14 @@ public class RomanPrinterTest {
     }
 
     @Test
-    public void testPrint_FullRangeSymbols() {
-        assertNotNull(RomanPrinter.print(5));    // V
-        assertNotNull(RomanPrinter.print(50));   // L
-        assertNotNull(RomanPrinter.print(100));  // C
-        assertNotNull(RomanPrinter.print(500));  // D
-        assertNotNull(RomanPrinter.print(1000)); // M
+    public void testPrint_WideNumberAlignment() {
+        int number = 888;
+        String result = RomanPrinter.print(number);
+        String[] lines = result.split("\n");
+        
+        int firstLineLength = lines[0].length();
+        for (String line : lines) {
+            assertEquals(firstLineLength, line.length());
+        }
     }
 }

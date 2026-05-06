@@ -1,5 +1,5 @@
 [![Build Automation](https://github.com/jeidi19/provaPraticaMTSS/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/jeidi19/provaPraticaMTSS/actions/workflows/build.yml)
-[![Coverage Status](https://coveralls.io/repos/github/jeidi19/provaPraticaMTSS/badge.svg?branch=main)](https://coveralls.io/github/jeidi19/provaPraticaMTSS?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/jeidi19/provaPraticaMTSS/badge.svg?branch=main&t=1)](https://coveralls.io/github/jeidi19/provaPraticaMTSS?branch=main&t=1)
 
 # Prova pratica MTSS
 ## Analisi Statica e Qualità

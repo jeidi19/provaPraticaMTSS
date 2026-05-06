@@ -90,7 +90,7 @@ public class RomanPrinter {
                 else if (c == 'D') { 
                     result.append(LETTER_D[i]); 
                 }
-                else if (c == 'M') { 
+                else { 
                     result.append(LETTER_M[i]); 
                 }
             }

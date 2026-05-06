@@ -12,6 +12,11 @@ import org.junit.Test;
 public class RomanPrinterTest {
 
     @Test
+    public void testConstructor(){
+        RomanPrinter printer = new RomanPrinter();
+    }
+
+    @Test
     public void testPrint_OutputNotNull() {
         String result = RomanPrinter.print(1);
         assertNotNull(result);
@@ -43,5 +48,15 @@ public class RomanPrinterTest {
         for (String line : lines) {
             assertEquals(firstLineLength, line.length());
         }
+    }
+
+    @Test
+    public void testPrint_AllSymbols() {
+        assertNotNull(RomanPrinter.print(1));
+        assertNotNull(RomanPrinter.print(5));   
+        assertNotNull(RomanPrinter.print(50));  
+        assertNotNull(RomanPrinter.print(100)); 
+        assertNotNull(RomanPrinter.print(500)); 
+        assertNotNull(RomanPrinter.print(1000)); 
     }
 }

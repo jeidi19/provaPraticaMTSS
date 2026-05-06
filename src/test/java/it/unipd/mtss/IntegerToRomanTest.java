@@ -10,6 +10,10 @@ import org.junit.Test;
 public class IntegerToRomanTest {
 
     @Test
+    public void testConstructor(){
+        IntegerToRoman translator = new IntegerToRoman();
+    }
+    @Test
     public void testConvert_OneShouldReturnI() {
         int number = 1;
         String result = IntegerToRoman.convert(number);
@@ -18,27 +22,37 @@ public class IntegerToRomanTest {
 
     @Test
     public void testConvert_FiveShouldReturnV() {
-        assertEquals("V", IntegerToRoman.convert(5));
+        int number = 5;
+        String result = IntegerToRoman.convert(number);
+        assertEquals("V", result);
     }
 
     @Test
     public void testConvert_TenShouldReturnX() {
-        assertEquals("X", IntegerToRoman.convert(10));
+        int number = 10;
+        String result = IntegerToRoman.convert(number);
+        assertEquals("X", result);
     }
 
     @Test
     public void testConvert_FiftyShouldReturnL() {
-        assertEquals("L", IntegerToRoman.convert(50));
+        int number = 50;
+        String result = IntegerToRoman.convert(number);
+        assertEquals("L", result);
     }
 
     @Test
     public void testConvert_OneHundredShouldReturnC() {
-        assertEquals("C", IntegerToRoman.convert(100));
+        int number = 100;
+        String result = IntegerToRoman.convert(number);
+        assertEquals("C", result);
     }
 
     @Test
     public void testConvert_FiveHundredShouldReturnD() {
-        assertEquals("D", IntegerToRoman.convert(500));
+        int number = 500;
+        String result = IntegerToRoman.convert(number);
+        assertEquals("D", result);
     }
 
     @Test
@@ -51,67 +65,90 @@ public class IntegerToRomanTest {
 
     @Test
     public void testConvert_FourShouldReturnIV() {
-        assertEquals("IV", IntegerToRoman.convert(4));
+        int number = 4;
+        String result = IntegerToRoman.convert(number);
+        assertEquals("IV", result);
     }
 
     @Test
     public void testConvert_NineShouldReturnIX() {
-        assertEquals("IX", IntegerToRoman.convert(9));
+        int number = 9;
+        String result = IntegerToRoman.convert(number);
+        assertEquals("IX", result);
     }
 
     @Test
     public void testConvert_FortyShouldReturnXL() {
-        assertEquals("XL", IntegerToRoman.convert(40));
+        int number = 40;
+        String result = IntegerToRoman.convert(number);
+        assertEquals("XL", result);
     }
 
     @Test
     public void testConvert_NinetyShouldReturnXC() {
-        assertEquals("XC", IntegerToRoman.convert(90));
+        int number = 90;
+        String result = IntegerToRoman.convert(number);
+        assertEquals("XC", result);
     }
 
     @Test
     public void testConvert_FourHundredShouldReturnCD() {
-        assertEquals("CD", IntegerToRoman.convert(400));
+        int number = 400;
+        String result = IntegerToRoman.convert(number);
+        assertEquals("CD", result);
     }
 
     @Test
     public void testConvert_NineHundredShouldReturnCM() {
-        assertEquals("CM", IntegerToRoman.convert(900));
+        int number = 900;
+        String result = IntegerToRoman.convert(number);
+        assertEquals("CM", result);
     }
 
 
     @Test
     public void testConvert_EightShouldReturnVIII() {
-        assertEquals("VIII", IntegerToRoman.convert(8));
+        int number = 8;
+        String result = IntegerToRoman.convert(number);
+        assertEquals("VIII", result);
     }
 
     @Test
     public void testConvert_ThirtyEightShouldReturnXXXVIII() {
-        assertEquals("XXXVIII", IntegerToRoman.convert(38));
+        int number = 38;
+        String result = IntegerToRoman.convert(number);
+        assertEquals("XXXVIII", result);
     }
 
     @Test
     public void testConvert_EightHundredEightyEightShouldReturnDCCCLXXXVIII() {
-        assertEquals("DCCCLXXXVIII", IntegerToRoman.convert(888));
+        int number = 888;
+        String result = IntegerToRoman.convert(number);
+        assertEquals("DCCCLXXXVIII", result);
     }
 
     @Test
     public void testConvert_NinetyNineShouldReturnXCIX() {
-        assertEquals("XCIX", IntegerToRoman.convert(99));
+        int number = 99;
+        String result = IntegerToRoman.convert(number);
+        assertEquals("XCIX", result);
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void testConvert_ZeroShouldThrowException() {
-        IntegerToRoman.convert(0);
+        int number = 0;
+        String result = IntegerToRoman.convert(number);
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void testConvert_NegativeNumberShouldThrowException() {
-        IntegerToRoman.convert(-1);
+        int number = -1;
+        String result = IntegerToRoman.convert(number);
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void testConvert_OverOneThousandShouldThrowException() {
-        IntegerToRoman.convert(1001);
+        int number = 1001;
+        String result = IntegerToRoman.convert(number);
     }
 }
